@@ -62,7 +62,8 @@ def image_features(
     #     raise ValueError(f'img_paths should be a list of image paths.')
 
     model = get_model(model_name).to(device)
-    dataset = ImageLoader(img, model, augment=augment)
+    # dataset = ImageLoader(img, model, augment=augment)
+    dataset = img
     dataloader = torch.utils.data.DataLoader(
         dataset, shuffle=False, batch_size=batch_size, num_workers=num_workers)
     with torch.no_grad():
