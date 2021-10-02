@@ -28,7 +28,7 @@ Package internally uses PyTorch and imagenet pretrained deep learning model like
 ## Install
 
 ```
-pip install -U git+https://github.com/chsasank/image_features.git
+pip install -U git+https://github.com/vasyllyashkevych/image_features.git
 ```
 
 ## Tutorial
